@@ -1,0 +1,13 @@
+PODS:
+  - Alamofire (3.4.0)
+  - Neon (0.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - Neon
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  Neon: 6bd929dbdf8f26b2129ce733e9290815345f6cb1
+
+COCOAPODS: 0.39.0
