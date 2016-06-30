@@ -27,10 +27,27 @@ class NextViewController: UIViewController, ErrorPopoverRender {
         return imageView
     }()
     
+    let circle = CircleIndicatorView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.whiteColor()
         self.view.addSubview(button)
         self.view.addSubview(animationView)
+        
+        circle.frame = CGRectMake(200, 300, 100, 100);
+        circle.autoresizingMask = [.FlexibleHeight,.FlexibleWidth]
+        self.view.addSubview(circle)
+        
+        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(NextViewController.addProgress(_ :)), userInfo: nil, repeats: true)
+    }
+    
+    func addProgress(timer: NSTimer) {
+        circle.progress += 0.1
+        if circle.progress == 1 {
+            timer.invalidate()
+            circle.reveal()
+        }
     }
     
     func tapAction(action:CustomButton) {

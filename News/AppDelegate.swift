@@ -46,6 +46,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let map = numbers.map({ $0 + 2})
         let reduce = numbers.myReduce(0, combine: { $0 + $1})
         print(reduce)
+        
+        Utils.instance.closure1 = {()->() in
+            print("1232131231")
+        }
+        Utils.instance.closure1?()
     }
     
     func applicationWillResignActive(application: UIApplication) {

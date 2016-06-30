@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C5C3BCFF8E629AD881559A6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4A95EDBAC01CDF806B343B /* Pods.framework */; };
+		AA1B20BB1D07E6BF0098629E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1B20BA1D07E6BF0098629E /* Utils.swift */; };
 		AA32EE291CFC0B9500CB85C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA32EE281CFC0B9500CB85C2 /* AppDelegate.swift */; };
 		AA32EE2B1CFC0B9500CB85C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA32EE2A1CFC0B9500CB85C2 /* Assets.xcassets */; };
 		AA32EE2E1CFC0B9500CB85C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA32EE2C1CFC0B9500CB85C2 /* LaunchScreen.storyboard */; };
@@ -52,6 +53,7 @@
 		AAD32AB01CFFBE4400E34F1A /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD32AAF1CFFBE4400E34F1A /* NextViewController.swift */; };
 		AAD32AB21CFFC49C00E34F1A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD32AB11CFFC49C00E34F1A /* UIView+Extension.swift */; };
 		AAD32AB41CFFCC8E00E34F1A /* ErrorPopoverRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD32AB31CFFCC8D00E34F1A /* ErrorPopoverRender.swift */; };
+		AAE9AD151D2501A90037D0F7 /* CircleIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9AD141D2501A90037D0F7 /* CircleIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		1C4A95EDBAC01CDF806B343B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1B20BA1D07E6BF0098629E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		AA32EE251CFC0B9500CB85C2 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA32EE281CFC0B9500CB85C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA32EE2A1CFC0B9500CB85C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +146,7 @@
 		AAD32AAF1CFFBE4400E34F1A /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		AAD32AB11CFFC49C00E34F1A /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		AAD32AB31CFFCC8D00E34F1A /* ErrorPopoverRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPopoverRender.swift; sourceTree = "<group>"; };
+		AAE9AD141D2501A90037D0F7 /* CircleIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleIndicatorView.swift; sourceTree = "<group>"; };
 		B8EFC145D82070789BE685D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E43EBF0C32BE7E94CE1D2B87 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +219,7 @@
 		AA32EE271CFC0B9500CB85C2 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				AAE9AD101D2501770037D0F7 /* Circle */,
 				AAD32AA91CFFB9D900E34F1A /* ProtocolAble */,
 				AA32EE5B1CFC122F00CB85C2 /* Common */,
 				AA32EE591CFC11CF00CB85C2 /* Model */,
@@ -283,6 +288,7 @@
 				AA32EE6E1CFC193300CB85C2 /* SingleModel.swift */,
 				AA32EE701CFC193C00CB85C2 /* DoubleModel.swift */,
 				AA32EE7A1CFC413600CB85C2 /* ThreeModel.swift */,
+				AA1B20BA1D07E6BF0098629E /* Utils.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +416,14 @@
 				AAD32AB31CFFCC8D00E34F1A /* ErrorPopoverRender.swift */,
 			);
 			path = ProtocolAble;
+			sourceTree = "<group>";
+		};
+		AAE9AD101D2501770037D0F7 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				AAE9AD141D2501A90037D0F7 /* CircleIndicatorView.swift */,
+			);
+			path = Circle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -610,8 +624,10 @@
 				AA32EEB01CFC4A8B00CB85C2 /* MJRefreshAutoStateFooter.m in Sources */,
 				AA32EEB51CFC4A8B00CB85C2 /* MJRefreshNormalHeader.m in Sources */,
 				AAD32AB21CFFC49C00E34F1A /* UIView+Extension.swift in Sources */,
+				AAE9AD151D2501A90037D0F7 /* CircleIndicatorView.swift in Sources */,
 				AA32EEBA1CFC4A8B00CB85C2 /* UIScrollView+MJRefresh.m in Sources */,
 				AA32EE5D1CFC124300CB85C2 /* ViewModel.swift in Sources */,
+				AA1B20BB1D07E6BF0098629E /* Utils.swift in Sources */,
 				AA32EE7B1CFC413600CB85C2 /* ThreeModel.swift in Sources */,
 				AA32EEB81CFC4A8B00CB85C2 /* MJRefreshConst.m in Sources */,
 				AA32EE631CFC156D00CB85C2 /* TableViewSection.swift in Sources */,
